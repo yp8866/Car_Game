@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    max-width: 100%;
+    background: url(./images/background.jpg) repeat-y center;
+    background-size: cover;
+    
+}
+
+#road{
+    background: url(./images/road.png);
+    background-size: contain;
+    width: 60vw;
+    height: 1200vh;
+    margin: -5px auto;
+    position: relative;
+    z-index: -1;
+    /* animation: roadanimation 20s linear infinite; */
+    
+    
+}
+
+.car{
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    top: 50vh;
+    left: 50px;
+    padding: -50px;
+    transition: all 0.5s;
+    /* border: 2px solid white; */
+}
+
+#car1{
+    left: 350px;
+    /* animation: carmove infinite 9s linear; */
+}
+#car2{
+    left: 490px;
+    /* animation: carmove infinite 5s linear; */
+}
+#car3{
+    left: 800px;
+    /* animation: carmove infinite 3s linear; */
+}
+#car4{
+    left: 670px;
+    /* animation: carmove infinite 4s linear; */
+}
+#mycar{
+    left: 45vw;
+    top: 50vh;
+    transition: all 0.1s linear;
+    
+}
+
+@keyframes carmove {
+    0%{
+        top: -30vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+@keyframes roadanimation {
+    0%{
+        top: -1100vh;
+    }
+    100%{
+        top: -200vh;
+    }
+}
+
+#start{
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    padding: 20px;
+    background-color: rgb(36, 142, 15);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 2;
+    
+}
+#score{
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 800;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
